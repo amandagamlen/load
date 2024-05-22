@@ -37,13 +37,13 @@ loader.load(
   function (gltf) {
     model = gltf.scene
 
-    // Apply black material to the model
+    // Apply glossy material to the model
     model.traverse((child) => {
       if (child.isMesh) {
-        child.material = new THREE.MeshBasicMaterial({
+        child.material = new THREE.MeshStandardMaterial({
           color: 0x000000, // Set color to black
-          transparent: true, // Enable transparency
-          opacity: 1, // Set opacity to 1 (fully opaque)
+          roughness: 0.2, // Adjust roughness to control reflection (lower value for glossy appearance)
+          metalness: 0.8, // Adjust metalness to control reflection (higher value for glossy appearance)
         })
       }
     })
