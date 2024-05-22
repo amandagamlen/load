@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <title>ime.</title>
+</head>
+<body>
+  <!-- <div class="close">
+    <a href="/ime.html"></a>
+    <div class="lr">
+        <div class="rl"></div>
+    </div> -->
+  <script>
+    $(function() {
+      $('body').click(function(e) {
+        e.preventDefault();
+        var destination = 'https://amandagamlen.github.io/em/pages/ime.html';
+        $('body').fadeOut(2000, function() {
+          window.location = destination;
+        });
+      });
+      return false;
+    });
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
