@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+body {
+  background: linear-gradient(270deg, #cfedfa, #e7ebed, #d3dde1, #d5f1fc, #c8d8de, #d1effa, #f1f8fa, #b6ccd2, #cee6ed);
+  background-size: 1800% 1800%;
+  -webkit-animation: sky 41s ease infinite;
+  -moz-animation: sky 41s ease infinite;
+  animation: sky 41s ease infinite;
+}
+
+@-webkit-keyframes sky {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
+@-moz-keyframes sky {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
+@keyframes sky {
+  0%{background-position:87% 0%}
+  50%{background-position:14% 100%}
+  100%{background-position:87% 0%}
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
