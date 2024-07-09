@@ -94,3 +94,15 @@ renderer.setAnimationLoop(() => {
   }
   renderer.render(scene, camera)
 })
+
+// Animation loop
+function animate() {
+  requestAnimationFrame(animate)
+
+  // Rotate the base (which contains the model)
+  base.rotation.y += 0.01
+
+  renderer.render(scene, camera)
+}
+
+animate()
